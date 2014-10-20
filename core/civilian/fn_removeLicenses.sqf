@@ -13,11 +13,11 @@ switch (_state) do
 	//Death while being wanted
 	case 0:
 	{
-		license_civ_rebel = false;
+		/*license_civ_rebel = false;
 		license_civ_driver = false;
 		license_civ_heroin = false;
 		license_civ_marijuana = false;
-		license_civ_coke = false;
+		license_civ_coke = false;*/
 	};
 	
 	//Jail licenses
@@ -48,4 +48,12 @@ switch (_state) do
 			hint localize "STR_Civ_LicenseRemove_2";
 		};
 	};
+	
+	case 4:
+    {
+        if(license_civ_driver) then {
+            license_civ_driver = false;
+            hint "Your driving licence was withdrawn.";
+        };
+    };
 };

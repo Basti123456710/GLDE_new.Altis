@@ -405,4 +405,11 @@ class Life_Client_Core
 		class vehicleWarned {};
 		class vehicleEmpd {};
 	};
+	
+	class DlRemove
+	{
+		file = "glde\scripts\dlicence_remove";
+		class licence_remove {};
+		class licence_remove_now {};
+	};
 };
