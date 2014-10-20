@@ -392,6 +392,7 @@ class Life_Client_Core
 		class copEnter {};
 		class say3D {};
 		class clothtextures {};
+		class emptyfuel {};
 	};
 	
 	class EMP
