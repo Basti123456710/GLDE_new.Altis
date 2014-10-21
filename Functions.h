@@ -13,7 +13,7 @@ class Socket_Reciever
 	};
 };
 
-class SpyGlass
+/* class SpyGlass
 {
 	tag = "SPY";
 	class Functions
@@ -28,7 +28,7 @@ class SpyGlass
 		class variableCheck{};
 		class initSpy {};
 	};
-};
+}; */
 
 class Life_Client_Core
 {
