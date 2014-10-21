@@ -25,13 +25,11 @@ switch (_filter) do
 			_ret pushBack ["U_B_CombatUniform_mcam_tshirt",nil,350];
 			_ret pushBack ["U_B_survival_uniform",nil,1250];
 		};
-		if(__GETC__(life_coplevel) > 2) then
+		if(__GETC__(life_coplevel) > 3) then
 		{
-			_ret pushBack ["U_B_CombatUniform_mcam_worn",nil,550];
-		};
-		if(__GETC__(life_coplevel) > 2) then
-		{
-			_ret pushBack ["U_B_Wetsuit",nil,5000];
+			_ret pushBack ["U_O_Wetsuit",nil,2500];
+			_ret pushBack ["V_RebreatherB",nil,1500];
+			_ret pushBack ["U_B_SpecopsUniform_sgg",nil,500];
 		};
 	};
 	
