@@ -352,7 +352,7 @@
 			<Original>Price:</Original>
 		</Key>
 		<Key ID="STR_GNOTF_NotEoughMoney_2">
-			<Original>You do not have enough money in your bank account to upgrade the gangs maximum member limit.</Original>
+			<Original>You do not have enough money in your gang bank account to upgrade the gangs maximum member limit.</Original>
 		</Key>
 		<Key ID="STR_GNOTF_Current">
 			<Original>Current:</Original>
