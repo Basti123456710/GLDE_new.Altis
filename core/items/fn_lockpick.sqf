@@ -8,16 +8,16 @@
 private["_curTarget","_distance","_isVehicle","_title","_progressBar","_cP","_titleText","_dice","_badDistance"];
 _curTarget = cursorTarget;
 life_interrupted = false;
-if(life_action_inUse) exitWith {};
-if(isNull _curTarget) exitWith {}; //Bad type
+if(life_action_inUse) exitWith {_ui = "statusBar" call BIS_fnc_rscLayer;_ui cutRsc["statusBar","PLAIN"];};
+if(isNull _curTarget) exitWith {_ui = "statusBar" call BIS_fnc_rscLayer;_ui cutRsc["statusBar","PLAIN"];}; //Bad type
 _distance = ((boundingBox _curTarget select 1) select 0) + 2;
-if(player distance _curTarget > _distance) exitWith {}; //Too far
+if(player distance _curTarget > _distance) exitWith {_ui = "statusBar" call BIS_fnc_rscLayer;_ui cutRsc["statusBar","PLAIN"];}; //Too far
 _isVehicle = if((_curTarget isKindOf "LandVehicle") OR (_curTarget isKindOf "Ship") OR (_curTarget isKindOf "Air")) then {true} else {false};
 if(_isVehicle && _curTarget in life_vehicles) exitWith {hint localize "STR_ISTR_Lock_AlreadyHave"};
 
 //More error checks
-if(!_isVehicle && !isPlayer _curTarget) exitWith {};
-if(!_isVehicle && !(_curTarget getVariable["restrained",false])) exitWith {};
+if(!_isVehicle && !isPlayer _curTarget) exitWith {_ui = "statusBar" call BIS_fnc_rscLayer;_ui cutRsc["statusBar","PLAIN"];};
+if(!_isVehicle && !(_curTarget getVariable["restrained",false])) exitWith {_ui = "statusBar" call BIS_fnc_rscLayer;_ui cutRsc["statusBar","PLAIN"];};
 
 _title = format[localize "STR_ISTR_Lock_Process",if(!_isVehicle) then {"Handcuffs"} else {getText(configFile >> "CfgVehicles" >> (typeOf _curTarget) >> "displayName")}];
 life_action_inUse = true; //Lock out other actions
@@ -48,21 +48,21 @@ while {true} do
 	_cP = _cP + 0.01;
 	_progressBar progressSetPosition _cP;
 	_titleText ctrlSetText format["%3 (%1%2)...",round(_cP * 100),"%",_title];
-	if(_cP >= 1 OR !alive player) exitWith {};
+	if(_cP >= 1 OR !alive player) exitWith {_ui = "statusBar" call BIS_fnc_rscLayer;_ui cutRsc["statusBar","PLAIN"];};
 	if(life_istazed) exitWith {}; //Tazed
 	if(life_interrupted) exitWith {};
-	if((player getVariable["restrained",false])) exitWith {};
-	if(player distance _curTarget > _distance) exitWith {_badDistance = true;};
+	if((player getVariable["restrained",false])) exitWith {_ui = "statusBar" call BIS_fnc_rscLayer;_ui cutRsc["statusBar","PLAIN"];};
+	if(player distance _curTarget > _distance) exitWith {_badDistance = true; _ui = "statusBar" call BIS_fnc_rscLayer;_ui cutRsc["statusBar","PLAIN"];};
 };
 
 //Kill the UI display and check for various states
 5 cutText ["","PLAIN"];
 player playActionNow "stop";
-if(!alive player OR life_istazed) exitWith {life_action_inUse = false;};
-if((player getVariable["restrained",false])) exitWith {life_action_inUse = false;};
-if(!isNil "_badDistance") exitWith {titleText[localize "STR_ISTR_Lock_TooFar","PLAIN"]; life_action_inUse = false;};
-if(life_interrupted) exitWith {life_interrupted = false; titleText[localize "STR_NOTF_ActionCancel","PLAIN"]; life_action_inUse = false;};
-if(!([false,"lockpick",1] call life_fnc_handleInv)) exitWith {life_action_inUse = false;};
+if(!alive player OR life_istazed) exitWith {life_action_inUse = false; _ui = "statusBar" call BIS_fnc_rscLayer;_ui cutRsc["statusBar","PLAIN"];};
+if((player getVariable["restrained",false])) exitWith {life_action_inUse = false; _ui = "statusBar" call BIS_fnc_rscLayer;_ui cutRsc["statusBar","PLAIN"];};
+if(!isNil "_badDistance") exitWith {titleText[localize "STR_ISTR_Lock_TooFar","PLAIN"]; life_action_inUse = false; _ui = "statusBar" call BIS_fnc_rscLayer;_ui cutRsc["statusBar","PLAIN"];};
+if(life_interrupted) exitWith {life_interrupted = false; titleText[localize "STR_NOTF_ActionCancel","PLAIN"]; life_action_inUse = false; _ui = "statusBar" call BIS_fnc_rscLayer;_ui cutRsc["statusBar","PLAIN"];};
+if(!([false,"lockpick",1] call life_fnc_handleInv)) exitWith {life_action_inUse = false; _ui = "statusBar" call BIS_fnc_rscLayer;_ui cutRsc["statusBar","PLAIN"];};
 
 life_action_inUse = false;
 

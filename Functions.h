@@ -393,6 +393,7 @@ class Life_Client_Core
 		class say3D {};
 		class clothtextures {};
 		class emptyfuel {};
+		class setFuel {};
 	};
 	
 	class EMP

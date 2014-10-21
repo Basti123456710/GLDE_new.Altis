@@ -15,8 +15,9 @@ life_versionInfo = "Altis Life by GLDE";
 // GLDE custom
 [] execVM "glde_init.sqf";
 
-// Statusbar //
-[] execVM "glde\scripts\fn_statusBar.sqf";
+
+
+
 
 
 // Disable fucking AI Voice and Chat Spam yeah :)

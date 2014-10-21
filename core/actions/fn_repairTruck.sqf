@@ -8,7 +8,7 @@
 private["_veh","_upp","_ui","_progress","_pgText","_cP","_displayName"];
 _veh = cursorTarget;
 life_interrupted = false;
-if(isNull _veh) exitwith {};
+if(isNull _veh) exitwith {_ui = "statusBar" call BIS_fnc_rscLayer;_ui cutRsc["statusBar","PLAIN"];};
 if((_veh isKindOf "Car") OR (_veh isKindOf "Ship") OR (_veh isKindOf "Air")) then
 {
 	if("ToolKit" in (items player)) then
@@ -36,10 +36,10 @@ if((_veh isKindOf "Car") OR (_veh isKindOf "Ship") OR (_veh isKindOf "Air")) the
 			_cP = _cP + 0.01;
 			_progress progressSetPosition _cP;
 			_pgText ctrlSetText format["%3 (%1%2)...",round(_cP * 100),"%",_upp];
-			if(_cP >= 1) exitWith {};
-			if(!alive player) exitWith {};
-			if(player != vehicle player) exitWith {};
-			if(life_interrupted) exitWith {};
+			if(_cP >= 1) exitWith {_ui = "statusBar" call BIS_fnc_rscLayer;_ui cutRsc["statusBar","PLAIN"];};
+			if(!alive player) exitWith {_ui = "statusBar" call BIS_fnc_rscLayer;_ui cutRsc["statusBar","PLAIN"];};
+			if(player != vehicle player) exitWith {_ui = "statusBar" call BIS_fnc_rscLayer;_ui cutRsc["statusBar","PLAIN"];};
+			if(life_interrupted) exitWith {_ui = "statusBar" call BIS_fnc_rscLayer;_ui cutRsc["statusBar","PLAIN"];};
 		};
 		
 		life_action_inUse = false;
