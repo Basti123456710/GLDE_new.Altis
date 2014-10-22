@@ -7,7 +7,7 @@
 */
 private["_position","_cone"];
 _cone = "RoadCone_F" createVehicle [0,0,0];
-_cone attachTo[player,[0,5.5,0.2]];
+_cone attachTo[player,[0,1.5,0.2]];
 _cone setDir 90;
 _cone setVariable["item","coneDeployed",true];
 life_action_coneDeploy = player addAction["<t color='#00FF00'>Place road cone</t>",{if(!isNull life_cone) then {detach life_cone; life_cone = ObjNull;}; player removeAction life_action_coneDeploy; life_action_coneDeploy = nil;},"",999,false,false,"",'!isNull life_cone'];
