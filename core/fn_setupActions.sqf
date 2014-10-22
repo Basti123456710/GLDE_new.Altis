@@ -24,6 +24,10 @@ switch (playerSide) do
 	life_actions = life_actions + [player addAction["<t color='#0060B6'>To gunner seat</t>",life_fnc_copEnter,"moveGunner",0,false,false,"",'!isNull vehicle player && vehicle player isKindOf "B_MRAP_01_hmg_F" && (locked (vehicle player)==2) && (gunner (vehicle player) != player)']];
 	life_actions = life_actions + [player addAction["<t color='#0060B6'>To commander seat</t>",life_fnc_copEnter,"moveCommander",0,false,false,"",'!isNull vehicle player && vehicle player isKindOf "I_MRAP_03_F" && (locked (vehicle player)==2) && (commander (vehicle player) != player)']];
 	
+	// custom objects
+	
+	life_actions = life_actions + [player addAction["<t color='#FF0000'>Pack up road cone</t>",life_fnc_packupRoadCone,"",0,false,false,"",' _cone = nearestObjects[getPos player,["RoadCone_F"],8] select 0; !isNil "_cone" && !isNil {(_cone getVariable "item")}']];
+	
 	
 
 	};

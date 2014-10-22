@@ -30,10 +30,15 @@ life_interrupted = false;
 life_respawned = false;
 life_removeWanted = false;
 life_action_gathering = false;
+
 // Admin Tool
 life_god = false; 
 life_frozen = false; 
 life_markers = false; 
+
+// custom objects
+
+life_cone = ObjNull;
 
 // EMP
 nn_last_vehicles = [];
@@ -169,7 +174,11 @@ life_inv_items =
 	"life_inv_boltcutter",
 	"life_inv_defusekit",
 	"life_inv_storagesmall",
-	"life_inv_storagebig"
+	"life_inv_storagebig",
+	
+	// custom Objects
+	"life_inv_cone"
+	
 ];
 
 //Setup variable inv vars.
@@ -248,7 +257,12 @@ sell_array =
 	["fuelF",500],
 	["spikeStrip",1200],
 	["cement",1950],
-	["goldbar",95000]
+	["goldbar",95000],
+	
+	//Custom objects
+	["cone",150]
+	
+	
 ];
 __CONST__(sell_array,sell_array);
 
@@ -278,7 +292,10 @@ buy_array =
 	["boltcutter",7500],
 	["defusekit",2500],
 	["storagesmall",75000],
-	["storagebig",150000]
+	["storagebig",150000],
+	
+	//Custom objects
+	["cone",250]
 ];
 __CONST__(buy_array,buy_array);
 

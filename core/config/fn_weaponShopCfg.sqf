@@ -130,7 +130,7 @@ switch(_shop) do
 				["Altis Sergeant Officer Shop",
 					[
 						["srifle_EBR_F",nil,15000],
-						["20Rnd_762x51_Mag",nil,150],
+						["20Rnd_762x51_Mag",nil,150]
 					]
 				];
 			};

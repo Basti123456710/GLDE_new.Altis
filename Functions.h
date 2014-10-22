@@ -414,4 +414,11 @@ class Life_Client_Core
 		class licence_remove {};
 		class licence_remove_now {};
 	};
+	
+	class Objects
+	{
+		file = "glde\scripts\objects";
+		class packupRoadCone {};
+		class roadCone {};
+	};
 };

@@ -56,5 +56,9 @@ switch (_item) do
 	case "defusekit": {2};
 	case "storagesmall": {5};
 	case "storagebig": {10};
+	
+	// new objects
+	case "cone": {3};
+	
 	default {1};
 };

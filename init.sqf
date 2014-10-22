@@ -15,6 +15,11 @@ life_versionInfo = "Altis Life by GLDE";
 // GLDE custom
 [] execVM "glde_init.sqf";
 
+// Igi Load for ADAC
+if (playerSide == east) then
+{
+	[] execVM "glde\scripts\igi_load\IgiLoadInit.sqf";
+};
 
 
 
