@@ -16,3 +16,5 @@ while {true} do
 		waitUntil {uniform player != "U_B_SpecopsUniform_sgg"};
 	}; 
 };
+
+

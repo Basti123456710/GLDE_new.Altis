@@ -119,6 +119,24 @@ switch(_shop) do
 		};
 	};
 	
+	case "cop_general":
+	{
+		switch(true) do
+		{
+			case (playerSide != west): {"You are not a cop!"};
+			case (__GETC__(life_coplevel) < 6): {"You are not at a general rank!"};
+			default
+			{
+				["Altis Sergeant Officer Shop",
+					[
+						["srifle_EBR_F",nil,15000],
+						["20Rnd_762x51_Mag",nil,150],
+					]
+				];
+			};
+		};
+	};
+	
 	case "rebel":
 	{
 		switch(true) do

@@ -101,4 +101,7 @@ life_cash = 0;
 [[player,life_sidechat,playerSide],"TON_fnc_managesc",false,false] spawn life_fnc_MP;
 
 [0] call SOCK_fnc_updatePartial;
-[3] call SOCK_fnc_updatePartial;
+if (side player != west) then {
+
+	[3] call SOCK_fnc_updatePartial;
+};
