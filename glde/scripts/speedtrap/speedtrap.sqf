@@ -5,7 +5,7 @@ while {playerSide == civilian} do
 	_vehicle = vehicle player;
 	_speed = speed _vehicle;
 	_speedtrap30 = [speedtrap_kav_1,speedtrap_kav_2];
-	_speedtrap50 = [,speedtrap_kav_3,speedtrap_ath_1];
+	_speedtrap50 = [speedtrap_kav_3,speedtrap_ath_1];
 	_name = getText (configFile >> "CfgVehicles" >> (typeOf _vehicle) >> "displayname");
 	// _list = ["C_Kart_01_Blu_F","C_Kart_01_Fuel_F","C_Kart_01_Red_F","C_Kart_01_Vrana_F","O_MRAP_02_F","B_Quadbike_01_F","C_Hatchback_01_F","C_Offroad_01_F","C_SUV_01_F","C_Van_01_transport_F","C_Hatchback_01_sport_F","C_Van_01_box_F","I_Truck_02_transport_F","I_Truck_02_covered_F","I_Truck_02_box_F","B_Truck_01_transport_F","B_Truck_01_covered_F","B_Truck_01_box_F","B_MRAP_01_F","I_MRAP_03_F"];
 	_multiplicator = 250;
