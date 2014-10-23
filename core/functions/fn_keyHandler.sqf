@@ -277,6 +277,7 @@ switch (_code) do
 		};
 	};
 	
+	// K Key
     case 37:
     {
         if (!_shift && !_alt && !_ctrlKey && (playerSide == west) && (vehicle player != player && (typeOf vehicle player) in ["B_Heli_Transport_01_F"])) then
