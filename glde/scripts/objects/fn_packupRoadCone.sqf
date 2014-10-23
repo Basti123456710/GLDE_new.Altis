@@ -10,7 +10,7 @@ if(isNil "_object") exitWith {};
 if(([true,"cone",1] call life_fnc_handleInv)) then
 {
     titleText["You picked up the road cone.","PLAIN"];
-    player removeAction life_action_conePickup;
+    // player removeAction life_action_conePickup;
     life_action_conePickup = nil;
     deleteVehicle _object;
 };

@@ -59,7 +59,7 @@ switch (_item) do
 	
 	// new objects
 	case "cone": {3};
-	case "sign": {3};
+
 	
 	default {1};
 };

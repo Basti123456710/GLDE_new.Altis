@@ -64,7 +64,7 @@ switch (_var) do
 	
 	// Custom objects
 	case "life_inv_cone": {("Road Cone")};
-	case "life_inv_sign": {("Sign")};
+
 	
 	//License Block
 	case "license_civ_driver": {(localize "STR_License_Driver")};
