@@ -421,4 +421,5 @@ class Life_Client_Core
 		class packupRoadCone {};
 		class roadCone {};
 	};
+	
 };

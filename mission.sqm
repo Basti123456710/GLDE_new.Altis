@@ -305,7 +305,6 @@ class Mission
 					skill=0.60000002;
 					text="cop_10";
 					description="WhiteListed - Cop 10";
-
 				};
 				class Item10
 				{
@@ -3739,7 +3738,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=3174;
+		items=3178;
 		class Item0
 		{
 			position[]={8065.1616,35.674362,24985.314};
@@ -35794,6 +35793,50 @@ class Mission
 			skill=0.60000002;
 			init="this enableSimulation false; this allowDamage false; this setVectorUp [0,0,1]; ";
 		};
+		class Item3174
+		{
+			position[]={3631.249,10.534739,13222.761};
+			azimut=215;
+			id=3403;
+			side="EMPTY";
+			vehicle="Land_Runway_PAPI_2";
+			skill=0.60000002;
+			text="speedtrap_kav_1";
+			init="this allowDamage false; this enableSimulation false;";
+		};
+		class Item3175
+		{
+			position[]={3716.4153,12.434614,13138.875};
+			azimut=290;
+			id=3404;
+			side="EMPTY";
+			vehicle="Land_Runway_PAPI_2";
+			skill=0.60000002;
+			text="speedtrap_kav_2";
+			init="this allowDamage false; this enableSimulation false;";
+		};
+		class Item3176
+		{
+			position[]={3761.7676,10.794988,13427.096};
+			azimut=220;
+			id=3405;
+			side="EMPTY";
+			vehicle="Land_Runway_PAPI_2";
+			skill=0.60000002;
+			text="speedtrap_kav_3";
+			init="this allowDamage false; this enableSimulation false;";
+		};
+		class Item3177
+		{
+			position[]={14115.513,21.387363,18507.955};
+			azimut=335;
+			id=3406;
+			side="EMPTY";
+			vehicle="Land_Runway_PAPI_2";
+			skill=0.60000002;
+			text="speedtrap_ath_1";
+			init="this allowDamage false; this enableSimulation false;";
+		};
 	};
 	class Markers
 	{
@@ -37784,8 +37827,8 @@ class Mission
 		class Item1
 		{
 			position[]={3623.8064,9.9061718,13140.558};
-			a=7;
-			b=75;
+			a=20;
+			b=100;
 			angle=7;
 			rectangular=1;
 			activationBy="CIV";
@@ -37794,16 +37837,16 @@ class Mission
 			type="SWITCH";
 			age="UNKNOWN";
 			expCond="this && (local player) && (vehicle player in thisList)";
-			expActiv="hint ""Höchstgeschwindigkeit 30km/h! Achten sie auf spielende Kinder und andere Personen am Markt!""";
+			expActiv="hint ""Max Speed: 30 km/h. Pay attention on playing kids!""";
 			class Effects
 			{
 			};
 		};
 		class Item2
 		{
-			position[]={3670.2173,10.452696,13133.481};
-			a=7;
-			b=40;
+			position[]={3691.8914,10.843347,13134.199};
+			a=10;
+			b=70;
 			angle=93;
 			rectangular=1;
 			activationBy="CIV";
@@ -37812,7 +37855,7 @@ class Mission
 			type="SWITCH";
 			age="UNKNOWN";
 			expCond="this && (local player) && (vehicle player in thisList)";
-			expActiv="hint ""Höchstgeschwindigkeit 30km/h! Achten sie auf spielende Kinder und andere Personen am Markt!""";
+			expActiv="hint ""Max Speed: 30 km/h. Pay attention on playing kids!""";
 			class Effects
 			{
 			};
@@ -37845,7 +37888,7 @@ class Mission
 			type="SWITCH";
 			age="UNKNOWN";
 			expCond="this && (local player) && (vehicle player in thisList)";
-			expActiv="hint ""Achtung! Sie nähern sich einem Checkpoint, Tempo verringern und halten sie Ausweiß und Führerschein bereit !""";
+			expActiv="hint ""Attenton! You're approaching a checkpoint. Please slow down and check your papers.""";
 			class Effects
 			{
 				voice="Alarm";
@@ -37931,7 +37974,7 @@ class Mission
 			type="SWITCH";
 			age="UNKNOWN";
 			expCond="this && (local player) && (vehicle player in thisList)";
-			expActiv="hint ""Achtung! Sie naehern sich einer Polizeikontrolle, Tempo verringern und halten sie Ausweiß und Führerschein bereit !""";
+			expActiv="hint ""Attenton! You're approaching a checkpoint. Please slow down and check your papers.""";
 			class Effects
 			{
 			};
