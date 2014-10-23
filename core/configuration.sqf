@@ -39,6 +39,7 @@ life_markers = false;
 // custom objects
 
 life_cone = ObjNull;
+life_sign = ObjNull;
 
 // EMP
 nn_last_vehicles = [];
@@ -178,6 +179,7 @@ life_inv_items =
 	
 	// custom Objects
 	"life_inv_cone"
+	"life_inv_sign"
 	
 ];
 
@@ -260,7 +262,8 @@ sell_array =
 	["goldbar",95000],
 	
 	//Custom objects
-	["cone",150]
+	["cone",150],
+	["sign",150]
 	
 	
 ];
@@ -295,7 +298,8 @@ buy_array =
 	["storagebig",150000],
 	
 	//Custom objects
-	["cone",250]
+	["cone",250],
+	["sign",250]
 ];
 __CONST__(buy_array,buy_array);
 

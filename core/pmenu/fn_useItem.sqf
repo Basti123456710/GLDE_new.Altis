@@ -75,6 +75,15 @@ switch (true) do
 		};
 	};
 	
+	case (_item == "sign"):
+	{
+		if(!isNull life_cone) exitWith {hint "You already place a sign!"};
+		if(([false,_item,1] call life_fnc_handleInv)) then
+		{
+			[] spawn life_fnc_sign;
+		};
+	};
+	
 	case (_item == "fuelF"):
 	{
 		if(vehicle player != player) exitWith {hint localize "STR_ISTR_RefuelInVehicle"};
