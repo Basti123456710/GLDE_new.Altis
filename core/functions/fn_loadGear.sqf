@@ -11,6 +11,8 @@ waitUntil {!(isNull (findDisplay 46))};
 
 _handle = [] spawn life_fnc_stripDownPlayer;
 waitUntil {scriptDone _handle};
+diag_log "Load Gear:" + _itemArray;
+
 
 if(count _itemArray == 0) exitWith
 {
