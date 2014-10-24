@@ -394,6 +394,7 @@ class Life_Client_Core
 		class clothtextures {};
 		class emptyfuel {};
 		class setFuel {};
+		class copGateOpener {};
 	};
 	
 	class EMP

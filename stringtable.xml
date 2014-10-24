@@ -102,15 +102,6 @@
 		<Key ID="STR_ANOTF_MEnabled">
 			<Original>Player Markers Enabled.</Original>
 		</Key>
-		<Key ID="STR_NOTF_ActionCancel">
-			<Original>Action Cancelled</Original>
-		</Key>
-		<Key ID="STR_Global_Yes">
-			<Original>Yes</Original>
-		</Key>
-		<Key ID="STR_Global_No">
-			<Original>No</Original>
-		</Key>
 	<Package name="ATM_Strings">
 		<Key ID="STR_ATM_Title">
 			<Original>Bank Account Management</Original>

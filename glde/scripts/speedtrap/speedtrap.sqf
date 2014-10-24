@@ -13,8 +13,9 @@ while {playerSide == civilian} do
 	if ((player == driver _vehicle) && (_vehicle distance _x < 15) && (_speed >= 35)) then 
 	{ 
 		titleCut [" ","white in",1];
-		[[getPlayerUID player,name player,"500",round _speed,_multiplicator],"life_fnc_wantedAdd",false,false] spawn life_fnc_MP;
 		hint parseText format ["You have been clocked! (Limit: 30, Speed: %1)", round _speed];
+		[[getPlayerUID player,name player,"500",round _speed,_multiplicator],"life_fnc_wantedAdd",false,false] spawn life_fnc_MP;
+		
 		sleep 2;
 
 	} foreach _speedtrap30;
@@ -22,8 +23,9 @@ while {playerSide == civilian} do
 	if ((player == driver _vehicle) && (_vehicle distance _x < 15) && (_speed >= 55)) then 
 	{ 
 		titleCut [" ","white in",1];
-		[[getPlayerUID player,name player,"500",round _speed,_multiplicator],"life_fnc_wantedAdd",false,false] spawn life_fnc_MP;
 		hint parseText format ["You have been clocked! (Limit: 50, Speed: %1)", round _speed];
+		[[getPlayerUID player,name player,"500",round _speed,_multiplicator],"life_fnc_wantedAdd",false,false] spawn life_fnc_MP;
+		
 		sleep 2;
 
 	} foreach _speedtrap50;

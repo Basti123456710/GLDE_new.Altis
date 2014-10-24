@@ -120,26 +120,6 @@ class CfgDebriefing
 		picture = "";
 		pictureColor[] = {0,0.3,0.6,1};
 	};
-	
-	class SpyGlass
-	{
-		title = "The SpyGlass sees you";
-		subTitle = "Du wurdest von SpyGlass entdeckt";
-		description = "Du wurdest von SpyGlass beim Cheating entdeckt und wurdest dem Admin gemeldet.";
-		pictureBackground = "";
-		picture = "";
-		pictureColor[] = {0,0.3,0.6,1};
-	};
-	
-	class NoGeneral
-	{
-		title = "Kein General!";
-		subTitle = "Du bist kein General!";
-		description = "Du bist kein General und darfst deshalb diesen Slot nicht benutzen!";
-		pictureBackground = "";
-		picture = "";
-		pictureColor[] = {0,0.3,0.6,1};
-	};
 };
 
 class CfgNotifications
