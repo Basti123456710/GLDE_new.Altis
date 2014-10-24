@@ -421,6 +421,8 @@ class Life_Client_Core
 		file = "glde\scripts\objects";
 		class packupRoadCone {};
 		class roadCone {};
+		class roadBarrier {};
+		class packupRoadBarrier {};
 	};
 	
 };

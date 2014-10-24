@@ -59,6 +59,7 @@ switch (_vehicle) do
 			case 6: {_color = "Grey"};
 			case 7: {_color = "Black"};
 			case 8: {_color = "Fire";};
+			case 9: {_color = "Police";};
 			};
 	};
 	// Hatchback Sport
@@ -73,6 +74,7 @@ switch (_vehicle) do
 			case 4: {_color = "Tan"};
 			case 5: {_color = "Green"};
 			case 6: {_color = "Fire";};
+			case 7: {_color = "Police";};
 		};
 	};
 	// SUV	
@@ -84,10 +86,11 @@ switch (_vehicle) do
 			case 1: {_color = "Black";};
 			case 2: {_color = "Silver";};
 			case 3: {_color = "Police";};
-			case 4: {_color = "Medic";};
-			case 5: {_color = "Batman"};
-			case 6: {_color = "Carbon"};
-			case 7: {_color = "Camo"};
+			case 4: {_color = "Police Blue";};
+			case 5: {_color = "Medic"};
+			case 6: {_color = "Batman"};
+			case 7: {_color = "Carbon"};
+			case 8: {_color = "Rebel"};
 			case 8: {_color = "Monster"};
 		};
 	};	
@@ -229,7 +232,7 @@ switch (_vehicle) do
 	{
 		switch (_index) do
 		{
-			case 0: {_color = "Polizei"};
+			case 0: {_color = "Police"};
 		};
 	};
 	// Hellcat
@@ -237,7 +240,7 @@ switch (_vehicle) do
 	{
 		switch (_index) do
 		{
-			case 0: {_color = "Polizei"};
+			case 0: {_color = "Police"};
 			case 1: {_color = "Rebel"};
 		};
 	};

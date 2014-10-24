@@ -58,7 +58,8 @@ switch (_vehicle) do
 			["\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_base07_co.paa","civ"],
 			["\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_base08_co.paa","civ"],
 			["\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_base09_co.paa","civ"],
-			["glde\textures\civ\civ_hatchback_fire.paa","civ"]
+			["glde\textures\civ\civ_hatchback_fire.paa","civ"],
+			["glde\textures\cop\cop_slimo_bl.paa","cop"]
 		];
 	};
 	// Hatchback Sport
@@ -73,7 +74,8 @@ switch (_vehicle) do
 			[_path + "hatchback_01_ext_sport04_co.paa","civ"],
 			[_path + "hatchback_01_ext_sport05_co.paa","civ"],
 			[_path + "hatchback_01_ext_sport06_co.paa","civ"],
-			["glde\textures\civ\civ_hatchback_fire.paa","civ"]
+			["glde\textures\civ\civ_hatchback_fire.paa","civ"],
+			["glde\textures\cop\cop_slimo_bl.paa","cop"]
 		];
 	};	
 	
@@ -86,6 +88,7 @@ switch (_vehicle) do
 			["\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_03_co.paa","civ"],
 			["\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_04_co.paa","civ"],
 			["glde\textures\cop\cop_suv.paa","cop"],
+			["glde\textures\cop\cop_suv_bl.paa","cop"],
 			["glde\textures\medic\medic_suv.paa","med"],
 		    ["glde\textures\civ\civ_suv_batman.paa","civ"],
 			["glde\textures\civ\civ_suv_carbon.paa","civ"],

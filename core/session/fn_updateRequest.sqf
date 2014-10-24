@@ -17,8 +17,7 @@ _packet pushBack _array;
 [] call life_fnc_saveGear;
 _packet pushBack life_gear;
 
-// debug
-diag_log format ["update request.sqf life_gear: %1" life_gear];
+
 
 switch (playerSide) do {
 	case civilian: {

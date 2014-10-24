@@ -68,6 +68,7 @@ switch (_mode) do
 			
 			// custom objects
 			case "cone": {"life_inv_cone"};
+			case "barrier": {"life_inv_barrier"};
 
 		};
 	};
@@ -128,6 +129,7 @@ switch (_mode) do
 			
 			// custom objects
 			case "life_inv_cone": {"cone"};
+			case "life_inv_barrier": {"barrier"};
 
 		};
 	};

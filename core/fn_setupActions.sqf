@@ -27,7 +27,7 @@ switch (playerSide) do
 	// custom objects
 	
 	life_actions = life_actions + [player addAction["<t color='#FF0000'>Pack up road cone</t>",life_fnc_packupRoadCone,"",0,false,false,"",' _cone = nearestObjects[getPos player,["RoadCone_F"],8] select 0; !isNil "_cone" && !isNil {(_cone getVariable "item")}']];
-	life_actions = life_actions + [player addAction["<t color='#FF0000'>Pack up sign</t>",life_fnc_packupSign,"",0,false,false,"",' _sign = nearestObjects[getPos player,["Sign_F"],8] select 0; !isNil "_sign" && !isNil {(_sign getVariable "item")}']];
+	life_actions = life_actions + [player addAction["<t color='#FF0000'>Pack up road barrier</t>",life_fnc_packupRoadBarrier,"",0,false,false,"",' _barrier = nearestObjects[getPos player,["RoadBarrier_F"],8] select 0; !isNil "_barrier" && !isNil {(_barrier getVariable "item")}']];
 	
 	
 
