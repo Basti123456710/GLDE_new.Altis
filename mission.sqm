@@ -168,7 +168,7 @@ class Mission
 	};
 	class Groups
 	{
-		items=86;
+		items=85;
 		class Item0
 		{
 			side="WEST";
@@ -2120,7 +2120,7 @@ class Mission
 			side="CIV";
 			class Vehicles
 			{
-				items=123;
+				items=124;
 				class Item0
 				{
 					position[]={8354.2715,85.512779,24953.012};
@@ -2392,8 +2392,9 @@ class Mission
 				};
 				class Item22
 				{
-					position[]={4782.5371,85.680832,11690.003};
-					azimut=310;
+					position[]={5109.7129,3.7165816,9953.1816};
+					azimut=170;
+					offsetY=0.5;
 					special="NONE";
 					id=118;
 					side="CIV";
@@ -2698,7 +2699,7 @@ class Mission
 				class Item48
 				{
 					position[]={13797.763,20.076372,18929.125};
-					azimut=-78.83429;
+					azimut=-78.834297;
 					special="NONE";
 					id=144;
 					side="WEST";
@@ -2709,7 +2710,7 @@ class Mission
 				class Item49
 				{
 					position[]={16582.426,11,12713.942};
-					azimut=37.43454;
+					azimut=37.434502;
 					special="NONE";
 					id=145;
 					side="WEST";
@@ -3133,8 +3134,8 @@ class Mission
 				};
 				class Item86
 				{
-					position[]={5242.1167,78.91523,11515.902};
-					azimut=168.89729;
+					position[]={4712.8833,6.1701875,9946.1699};
+					azimut=20;
 					special="NONE";
 					id=182;
 					side="CIV";
@@ -3273,7 +3274,7 @@ class Mission
 					side="WEST";
 					vehicle="B_RangeMaster_F";
 					skill=0.60000002;
-					init="this enableSimulation false;  this allowDamage false;  this addAction[""Helicopter Shop"",life_fnc_vehicleShopMenu,[""cop_air"",west,""cop_air_3"",""cop"",""APD - Kavala District""]];  this addAction[""Vehicle Garage"",  {   [[getPlayerUID player,playerSide,""Air"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""cop_air_1""; life_garage_type = ""Air"";  },"""",0,false,false,"""",'playerSide == west'];  this addAction[""Store vehicle in Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
+					init="this enableSimulation false;  this allowDamage false;  this addAction[""Helicopter Shop"",life_fnc_vehicleShopMenu,[""cop_air"",west,""cop_air_3"",""cop"",""APD - Kavala District""]];  this addAction[""Vehicle Garage"",  {   [[getPlayerUID player,playerSide,""Air"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""cop_air_3""; life_garage_type = ""Air"";  },"""",0,false,false,"""",'playerSide == west'];  this addAction[""Store vehicle in Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
 				};
 				class Item99
 				{
@@ -3378,7 +3379,7 @@ class Mission
 					side="WEST";
 					vehicle="B_RangeMaster_F";
 					skill=0.60000002;
-					init="this enableSimulation false;  this allowDamage false;  this addAction[""Vehicle Shop"",life_fnc_vehicleShopMenu,[""cop_car"",west,""cop_car_4"",""cop"",""APD - Kavala District""]];  this addAction[""Vehicle Garage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""cop_car_1_102""; life_garage_type = ""Car"";  },"""",0,false,false,"""",'playerSide == west'];  this addAction[""Store vehicle in Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store']; this setVariable[""realname"",""Cop Vehicle Store""];";
+					init="this enableSimulation false;  this allowDamage false;  this addAction[""Vehicle Shop"",life_fnc_vehicleShopMenu,[""cop_car"",west,""cop_car_4"",""cop"",""APD - Kavala District""]];  this addAction[""Vehicle Garage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""cop_car_4""; life_garage_type = ""Car"";  },"""",0,false,false,"""",'playerSide == west'];  this addAction[""Store vehicle in Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store']; this setVariable[""realname"",""Cop Vehicle Store""];";
 				};
 				class Item108
 				{
@@ -3496,14 +3497,14 @@ class Mission
 				class Item118
 				{
 					position[]={25755.646,24.402653,21587.832};
-					azimut=245;
+					azimut=250;
 					special="NONE";
 					id=214;
 					side="EAST";
 					vehicle="O_Soldier_F";
 					skill=0.60000002;
 					text="reb_1_3_1_1";
-					init="removeallWeapons this;  this enableSimulation false;  this allowDamage false;  this addAction[""Vehicle Shop"",life_fnc_vehicleShopMenu,[""reb_car"",civilian,""reb_v_3"",""reb"",""Rebel Motorpool - Western Side""],0,false,false,"""",'license_civ_rebel'];";
+					init="removeallWeapons this;  this enableSimulation false;  this allowDamage false;  this addAction[""Vehicle Shop"",life_fnc_vehicleShopMenu,[""reb_car"",civilian,""reb_v_3"",""reb"",""Rebel Motorpool - Western Side""],0,false,false,"""",'license_civ_rebel'];this addAction[""Vehicle Garage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP; life_garage_type = ""Car"";   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""reb_v_3"";  }];  this addAction[""Store vehicle in Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
 				};
 				class Item119
 				{
@@ -3526,7 +3527,7 @@ class Mission
 					side="WEST";
 					vehicle="B_RangeMaster_F";
 					skill=0.60000002;
-					init="this enableSimulation false;  this allowDamage false;  this addAction[""Helicopter Shop"",life_fnc_vehicleShopMenu,[""cop_air"",west,""cop_air_2"",""cop"",""APD - Kavala District""]];  this addAction[""Vehicle Garage"",  {   [[getPlayerUID player,playerSide,""Air"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""cop_air_1""; life_garage_type = ""Air"";  },"""",0,false,false,"""",'playerSide == west'];  this addAction[""Store vehicle in Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
+					init="this enableSimulation false;  this allowDamage false;  this addAction[""Helicopter Shop"",life_fnc_vehicleShopMenu,[""cop_air"",west,""cop_air_2"",""cop"",""APD - Kavala District""]];  this addAction[""Vehicle Garage"",  {   [[getPlayerUID player,playerSide,""Air"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""cop_air_2""; life_garage_type = ""Air"";  },"""",0,false,false,"""",'playerSide == west'];  this addAction[""Store vehicle in Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
 				};
 				class Item121
 				{
@@ -3537,7 +3538,7 @@ class Mission
 					side="WEST";
 					vehicle="B_RangeMaster_F";
 					skill=0.60000002;
-					init="this enableSimulation false;  this allowDamage false;  this addAction[""Vehicle Shop"",life_fnc_vehicleShopMenu,[""cop_car"",west,""cop_car_6"",""cop"",""APD - Kavala District""]];  this addAction[""Vehicle Garage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""cop_car_1""; life_garage_type = ""Car"";  },"""",0,false,false,"""",'playerSide == west'];  this addAction[""Store vehicle in Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store']; this setVariable[""realname"",""Cop Vehicle Store""];";
+					init="this enableSimulation false;  this allowDamage false;  this addAction[""Vehicle Shop"",life_fnc_vehicleShopMenu,[""cop_car"",west,""cop_car_6"",""cop"",""APD - Kavala District""]];  this addAction[""Vehicle Garage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""cop_car_6""; life_garage_type = ""Car"";  },"""",0,false,false,"""",'playerSide == west'];  this addAction[""Store vehicle in Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store']; this setVariable[""realname"",""Cop Vehicle Store""];";
 				};
 				class Item122
 				{
@@ -3548,7 +3549,19 @@ class Mission
 					side="WEST";
 					vehicle="B_RangeMaster_F";
 					skill=0.60000002;
-					init="this enableSimulation false;  this allowDamage false;  this addAction[""Helicopter Shop"",life_fnc_vehicleShopMenu,[""cop_air"",west,""cop_air_4"",""cop"",""APD - Kavala District""]];  this addAction[""Vehicle Garage"",  {   [[getPlayerUID player,playerSide,""Air"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""cop_air_1""; life_garage_type = ""Air"";  },"""",0,false,false,"""",'playerSide == west'];  this addAction[""Store vehicle in Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
+					init="this enableSimulation false;  this allowDamage false;  this addAction[""Helicopter Shop"",life_fnc_vehicleShopMenu,[""cop_air"",west,""cop_air_4"",""cop"",""APD - Kavala District""]];  this addAction[""Vehicle Garage"",  {   [[getPlayerUID player,playerSide,""Air"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""cop_air_4""; life_garage_type = ""Air"";  },"""",0,false,false,"""",'playerSide == west'];  this addAction[""Store vehicle in Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
+				};
+				class Item123
+				{
+					position[]={12261.921,123.40139,8901.6934};
+					azimut=90;
+					special="NONE";
+					id=219;
+					side="EAST";
+					vehicle="O_Soldier_F";
+					skill=0.60000002;
+					text="reb_g_1";
+					init="removeallWeapons this; this enableSimulation false; this allowDamage false; this addAction[""Vehicle Garage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP; life_garage_type = ""Car"";   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""car_g_5"";  }];  this addAction[""Store vehicle in Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
 				};
 			};
 		};
@@ -3564,7 +3577,7 @@ class Mission
 					azimut=-46.6264;
 					offsetY=0.69999999;
 					special="NONE";
-					id=219;
+					id=220;
 					side="CIV";
 					vehicle="C_man_1";
 					leader=1;
@@ -3583,7 +3596,7 @@ class Mission
 				{
 					position[]={8437.2002,105.64852,25149.426};
 					azimut=182.302;
-					id=220;
+					id=221;
 					side="GUER";
 					vehicle="I_Story_Colonel_F";
 					player="PLAY CDG";
@@ -3606,7 +3619,7 @@ class Mission
 					position[]={8424.9258,99.930687,25177.225};
 					azimut=185.11099;
 					special="NONE";
-					id=221;
+					id=222;
 					side="GUER";
 					vehicle="B_medic_F";
 					player="PLAY CDG";
@@ -3620,7 +3633,7 @@ class Mission
 					position[]={8425.2324,99.418427,25179.02};
 					azimut=185.11099;
 					special="NONE";
-					id=222;
+					id=223;
 					side="GUER";
 					vehicle="B_medic_F";
 					player="PLAY CDG";
@@ -3633,7 +3646,7 @@ class Mission
 					position[]={8427.6777,99.306786,25178.748};
 					azimut=185.11099;
 					special="NONE";
-					id=223;
+					id=224;
 					side="GUER";
 					vehicle="B_medic_F";
 					player="PLAY CDG";
@@ -3646,7 +3659,7 @@ class Mission
 					position[]={8428.2236,99.711594,25177.109};
 					azimut=185.11099;
 					special="NONE";
-					id=224;
+					id=225;
 					side="GUER";
 					vehicle="B_medic_F";
 					player="PLAY CDG";
@@ -3666,7 +3679,7 @@ class Mission
 				{
 					position[]={9097.7197,19.278255,21312.76};
 					azimut=-701.59497;
-					id=225;
+					id=226;
 					side="WEST";
 					vehicle="B_Soldier_F";
 					leader=1;
@@ -3685,7 +3698,7 @@ class Mission
 					position[]={3738.906,12.736941,13268.175};
 					azimut=51.995098;
 					special="NONE";
-					id=226;
+					id=227;
 					side="CIV";
 					vehicle="C_man_1";
 					leader=1;
@@ -3705,33 +3718,12 @@ class Mission
 					position[]={16987.268,16.514805,12862.411};
 					azimut=150;
 					special="NONE";
-					id=227;
+					id=228;
 					side="CIV";
 					vehicle="C_man_1";
 					leader=1;
 					skill=0.60000002;
 					init="this enableSimulation false; this allowDamage false; this addAction[""Vehicle Garage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP; life_garage_type = ""Car"";   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""car_g_4"";  }];  this addAction[""Store vehicle in Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
-				};
-			};
-		};
-		class Item85
-		{
-			side="EAST";
-			class Vehicles
-			{
-				items=1;
-				class Item0
-				{
-					position[]={12261.921,123.40139,8901.6934};
-					azimut=90;
-					special="NONE";
-					id=228;
-					side="EAST";
-					vehicle="O_Soldier_F";
-					leader=1;
-					skill=0.60000002;
-					text="reb_g_1";
-					init="removeallWeapons this; this enableSimulation false; this allowDamage false; this addAction[""Vehicle Garage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP; life_garage_type = ""Car"";   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""car_g_5"";  }];  this addAction[""Store vehicle in Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
 				};
 			};
 		};
@@ -36458,7 +36450,7 @@ class Mission
 		};
 		class Item78
 		{
-			position[]={4782.3047,85.654236,11690.624};
+			position[]={5109.4805,3.7349238,9953.8027};
 			name="Dealer_1_4";
 			text="Drug Dealer";
 			type="mil_dot";
@@ -37049,7 +37041,7 @@ class Mission
 		};
 		class Item152
 		{
-			position[]={5242.2974,78.634445,11514.398};
+			position[]={4712.8701,6.1592078,9946.4902};
 			name="chop_shop_3";
 			text="Chop Shop";
 			type="o_armor";
@@ -37356,10 +37348,10 @@ class Mission
 		};
 		class Item193
 		{
-			position[]={9137.5713,16.893738,21488.521};
-			name="Akademie";
-			text="Cop-Akademie";
-			type="mil_box";
+			position[]={9140.8311,16.817215,21493.959};
+			name="bootcamp";
+			text="Bootcamp";
+			type="mil_flag";
 			colorName="ColorWEST";
 		};
 		class Item194
@@ -37870,9 +37862,9 @@ class Mission
 			interruptable=1;
 			age="UNKNOWN";
 			name="safezone_trigger_kavala";
-			expCond="(vehicle player in thislist)";
-			expActiv="[""enter"",""Kavala""] call lhm_fnc_trigSafezone;";
-			expDesactiv="[""exit"",""Kavala""] call lhm_fnc_trigSafezone;";
+			expCond="this && (local player) && (vehicle player in thisList)";
+			expActiv="hint ""Attention! You are entering a Safezone."";";
+			expDesactiv="hint ""Attention! You are leaving a Safezone."";";
 			class Effects
 			{
 			};
@@ -38057,9 +38049,9 @@ class Mission
 			interruptable=1;
 			age="UNKNOWN";
 			name="safezone_trigger_pyrgos";
-			expCond="(vehicle player in thislist)";
-			expActiv="[""enter"",""Pyrgos""] call lhm_fnc_trigSafezone;";
-			expDesactiv="[""exit"",""Pyrgos""] call lhm_fnc_trigSafezone;";
+			expCond="this && (local player) && (vehicle player in thisList)";
+			expActiv="hint ""Attention! You are entering a Safezone."";";
+			expDesactiv="hint ""Attention! You are leaving a Safezone."";";
 			class Effects
 			{
 			};
@@ -38074,9 +38066,9 @@ class Mission
 			interruptable=1;
 			age="UNKNOWN";
 			name="safezone_trigger_athira";
-			expCond="(vehicle player in thislist)";
-			expActiv="[""enter"",""Athira""] call lhm_fnc_trigSafezone;";
-			expDesactiv="[""exit"",""Athira""] call lhm_fnc_trigSafezone;";
+			expCond="this && (local player) && (vehicle player in thisList)";
+			expActiv="hint ""Attention! You are entering a Safezone."";";
+			expDesactiv="hint ""Attention! You are leaving a Safezone."";";
 			class Effects
 			{
 			};
@@ -38091,9 +38083,9 @@ class Mission
 			interruptable=1;
 			age="UNKNOWN";
 			name="safezone_trigger_pyrgos_1";
-			expCond="(vehicle player in thislist)";
-			expActiv="[""enter"",""Pyrgos""] call lhm_fnc_trigSafezone;";
-			expDesactiv="[""exit"",""Pyrgos""] call lhm_fnc_trigSafezone;";
+			expCond="this && (local player) && (vehicle player in thisList)";
+			expActiv="hint ""Attention! You are entering a Safezone."";";
+			expDesactiv="hint ""Attention! You are leaving a Safezone."";";
 			class Effects
 			{
 			};

@@ -62,6 +62,7 @@ switch (true) do
 		if(!isNull life_spikestrip) exitWith {hint localize "STR_ISTR_SpikesDeployment"};
 		if(([false,_item,1] call life_fnc_handleInv)) then
 		{
+			closeDialog 0;
 			[] spawn life_fnc_spikeStrip;
 		};
 	};
@@ -71,16 +72,18 @@ switch (true) do
 		if(!isNull life_cone) exitWith {hint "You already place a road cone!"};
 		if(([false,_item,1] call life_fnc_handleInv)) then
 		{
+			closeDialog 0;
 			[] spawn life_fnc_roadCone;
 		};
 	};
 	
-	case (_item == "sign"):
+	case (_item == "barrier"):
 	{
-		if(!isNull life_cone) exitWith {hint "You already place a sign!"};
+		if(!isNull life_barrier) exitWith {hint "You already place a barrier!"};
 		if(([false,_item,1] call life_fnc_handleInv)) then
 		{
-			[] spawn life_fnc_sign;
+			closeDialog 0;
+			[] spawn life_fnc_barrier;
 		};
 	};
 	
