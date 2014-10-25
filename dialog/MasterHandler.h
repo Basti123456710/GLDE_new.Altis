@@ -26,3 +26,5 @@
 #include "federalReserve.h"
 #include "emp_menu.hpp"
 #include "compensate.hpp"
+#include "common_EditorWrapper.hpp"
+#include "market.hpp"

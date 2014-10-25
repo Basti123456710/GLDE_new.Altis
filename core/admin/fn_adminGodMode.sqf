@@ -23,4 +23,5 @@ if(life_god) then {
 	life_god = true;
 	titleText ["God mode enabled","PLAIN"]; titleFadeOut 2;
 	player allowDamage false;
+	player setDamage 0;
 }; 

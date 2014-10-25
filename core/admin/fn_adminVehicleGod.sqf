@@ -23,8 +23,9 @@ if(life_god) then {
 } else {
 	life_god = true;
 	titleText ["Vehicle god mode enabled","PLAIN"]; titleFadeOut 2;
-	while (vehicle player != player)
+	while {vehicle player != player} do
 	{
 		vehicle player allowDamage false;
+		vehicle player setDamage 0;
 	};
 }; 

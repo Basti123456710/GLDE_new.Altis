@@ -157,7 +157,7 @@ class life_admin_menu {
 			text = "$STR_Admin_VehicleGod";
 			onButtonClick = "[] call life_fnc_adminVehicleGod;";
 			x = -0.06 + (6.25 / 40) + (1 / 250 / (safezoneW / safezoneH));
-			y = 0.89;
+			y = 0.98;
 			w = (6.25 / 40);
 			h = (1 / 25);
 		};

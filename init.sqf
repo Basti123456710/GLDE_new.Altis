@@ -21,7 +21,9 @@ if (playerSide == east) then
 	[] execVM "glde\scripts\igi_load\IgiLoadInit.sqf";
 };
 
-[] execVM "glde\scripts\speedtrap\speedtrap.sqf";
+// Speedtraps
+[] execVM "glde\scripts\speedtrap\speedtrap30.sqf";
+[] execVM "glde\scripts\speedtrap\speedtrap50.sqf";
 
 
 

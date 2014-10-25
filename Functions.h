@@ -397,6 +397,7 @@ class Life_Client_Core
 		class emptyfuel {};
 		class setFuel {};
 		class copGateOpener {};
+		class randomRound {};
 	};
 	
 	class EMP
@@ -425,6 +426,24 @@ class Life_Client_Core
 		class roadCone {};
 		class roadBarrier {};
 		class packupRoadBarrier {};
+	};
+	
+	class Market
+	{
+		file = "glde\scripts\market";
+		class openMarketView;
+		class refreshMarketView;
+		class marketShortView;
+		class marketBuy;
+		class marketSell;
+		class marketGetBuyPrice;
+		class marketGetSellPrice;
+		class marketconfiguration;
+		class marketReset;
+		class marketChange;
+		class marketGetRow;
+		class marketGetPriceRow;
+		class marketSetPriceRow;
 	};
 	
 };
