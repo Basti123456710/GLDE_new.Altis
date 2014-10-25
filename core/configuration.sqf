@@ -409,6 +409,7 @@ life_garage_sell =
 siren_lights_vehicle =
 [
 	"C_Hatchback_01_sport_F",
+	"C_Hatchback_01_F",
 	"B_MRAP_01_F",
 	"B_MRAP_01_hmg_F",
 	"C_Offroad_01_F",

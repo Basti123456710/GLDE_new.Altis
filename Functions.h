@@ -59,6 +59,7 @@ class Life_Client_Core
 		class adminDebugCon {};
 		class adminCompensate {};
 		class adminGodMode {};
+		class adminVehicleGod {};
 		class adminFreeze {};
 		class adminMarkers {};
 	}; 
@@ -72,6 +73,7 @@ class Life_Client_Core
 		class revivePlayer {};
 		class revived {};
 		class medicMarkers {};
+		class medicPlayerMarkers {};
 		class requestMedic {};
 		class medicRequest {};
 		class deathScreen {};

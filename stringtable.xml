@@ -66,6 +66,9 @@
 		<Key ID="STR_Admin_God">
 			<Original>GodMode</Original>
 		</Key>
+		<Key ID="STR_Admin_VehicleGod">
+			<Original>Vehicle god</Original>
+		</Key>
 		<Key ID="STR_Admin_Freeze">
 			<Original>Freeze</Original>
 		</Key>
@@ -1752,6 +1755,9 @@
 		<Key ID="STR_pInAct_DepositToGang">
 			<Original>Deposit To Gang</Original>
 		</Key>
+		 <Key ID="STR_pInAct_driverfalse">
+            <Original>DL remove</Original>
+        </Key>
 	</Package>
 		<Package name="Vehicle_Interaction">
 		<Key ID="STR_vInAct_Title">

@@ -83,7 +83,7 @@ switch (true) do
 		if(([false,_item,1] call life_fnc_handleInv)) then
 		{
 			closeDialog 0;
-			[] spawn life_fnc_barrier;
+			[] spawn life_fnc_roadBarrier;
 		};
 	};
 	

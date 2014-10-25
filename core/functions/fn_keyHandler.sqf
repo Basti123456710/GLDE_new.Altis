@@ -64,7 +64,7 @@ switch (_code) do
 		switch (playerSide) do 
 		{
 			case west: {if(!visibleMap) then {[] spawn life_fnc_copMarkers;}};
-			case independent: {if(!visibleMap) then {[] spawn life_fnc_medicMarkers;}};
+			case independent: {if(!visibleMap) then {[] spawn life_fnc_medicMarkers; [] spawn life_fnc_medicPlayerMarkers;}};
 		};
 	};
 	
@@ -176,7 +176,7 @@ switch (_code) do
 	//F Key
 	case 33:
 	{
-		if(playerSide in [west,independent] && vehicle player != player && !_ctrl && !life_siren1_active ) then
+		if(playerSide in [west,independent] && vehicle player != player && !_alt && !_ctrlKey && !life_siren1_active ) then
 		{
 			[] spawn
 			{
@@ -196,14 +196,14 @@ switch (_code) do
 				titleText ["Sirens On","PLAIN"];
 				_veh setVariable["siren1",true,true];
 				if(playerSide == west) then {
-					[[_veh],"life_fnc_copSiren",nil,true] spawn life_fnc_MP;
+					[[_veh],"life_fnc_copSiren1",nil,true] spawn life_fnc_MP;
 				} else {
 					// Medic Siren here
 				};
 			};
 		};
 		
-		if(playerSide == west && vehicle player != player && _ctrl && !life_siren2_active) then
+		if(playerSide == west && vehicle player != player && !_alt && _ctrlKey && !life_siren2_active) then
 		{
 			[] spawn
 			{
