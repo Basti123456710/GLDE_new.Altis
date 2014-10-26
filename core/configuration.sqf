@@ -30,6 +30,7 @@ life_interrupted = false;
 life_respawned = false;
 life_removeWanted = false;
 life_action_gathering = false;
+life_sells_vehicle = false; // duping fix
 
 // Admin Tool
 life_god = false; 
