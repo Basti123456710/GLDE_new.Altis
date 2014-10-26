@@ -1,10 +1,10 @@
 /*
-	File: fn_copMarkers.sqf
+	File: fn_medicPlayerMarkers.sqf
 	Author: Bryan "Tonic" Boardwine
 	Edited by H4SHK3KS
 	
 	Description:
-	Marks cops on the map for other cops. Only initializes when the actual map is open.
+	Marks medics on the map for other medics. Only initializes when the actual map is open.
 */
 private["_markers","_medics"];
 _markers = [];
