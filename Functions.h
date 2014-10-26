@@ -41,6 +41,7 @@ class Life_Client_Core
 		class setupEVH {};
 		class initCiv {};
 		class initCop {};
+		class initAdac {};
 		class initMedic {};
 		class welcomeNotification {};
 	};
@@ -306,6 +307,13 @@ class Life_Client_Core
 		class fedCamDisplay {};
 		class copLoadout {};
 		class ticketPaid {};
+	};
+	
+	class ADAC
+	{
+		file = "core\adac";
+		class adacMarkers{};
+		class adacLoadout{};
 	};
 	
 	class Gangs

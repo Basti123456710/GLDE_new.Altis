@@ -73,6 +73,11 @@ switch(playerSide) do {
 		__CONST__(life_medicLevel, parseNumber(_this select 7));
 		__CONST__(life_coplevel,0);
 	};
+	
+	case independent: {
+		__CONST__(life_adaclevel, parseNumber(_this select 7));
+		__CONST__(life_coplevel,0);
+	};
 };
 
 if(count (_this select 12) > 0) then {

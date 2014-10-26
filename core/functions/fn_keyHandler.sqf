@@ -66,6 +66,7 @@ switch (_code) do
 			case west: {if(!visibleMap) then {[] spawn life_fnc_copMarkers;}};
 			case independent: {if(!visibleMap) then {[] spawn life_fnc_medicMarkers; [] spawn life_fnc_medicPlayerMarkers;}};
 			case civilian: {if(!visibleMap) then {[] spawn life_fnc_gangPlayerMarkers;}};
+			case east: {if(!visibleMap) then {[] spawn life_fnc_adacMarkers;}};
 		};
 	};
 	

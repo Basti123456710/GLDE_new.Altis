@@ -202,4 +202,13 @@ class CfgNotifications
 		duration = 10;
 		priority = 5;
 	};
+	
+	class AdacMessage
+	{
+		title = "ADAC Message";
+		iconPicture = "icons\messagenew.paa";
+		description = "%1";
+		duration = 10;
+		priority = 5;
+	};
 };
