@@ -20,8 +20,8 @@ while {playerSide == civilian} do
 			hint parseText format ["You have been clocked! (Limit: 50, Speed: %1)", round _speed];
 			[[0,format["%1 has been clocked! Vehicle: %4, Position: %3, Speed: %2 Kmh!",name player, round _speed, _x, _name]],"life_fnc_broadcast",west,false] spawn life_fnc_MP;		
 			
-			sleep 1;
+			sleep 0.1;
 		};
 	} foreach _speedtrap;
-	sleep 1;
+	sleep 0.5;
 };

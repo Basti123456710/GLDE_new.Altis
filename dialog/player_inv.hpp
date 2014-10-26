@@ -315,7 +315,7 @@ class playerSettings {
             text = "Markt";
             onButtonClick = "[] call life_fnc_openMarketView;";
             
-            x = 0.26 + (6.25 / 19.8) + (1 / 250 / (safezoneW / safezoneH));
+            x = 0.1 + (6.25 / 19.8) + (1 / 250 / (safezoneW / safezoneH));
             y = 0.805;
             w = (6.25 / 40);
             h = (1 / 25);

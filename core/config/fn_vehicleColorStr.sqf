@@ -59,7 +59,7 @@ switch (_vehicle) do
 			case 6: {_color = "Grey"};
 			case 7: {_color = "Black"};
 			case 8: {_color = "Fire";};
-			case 9: {_color = "Police";};
+			case 9: {_color = "Police Blue";};
 			};
 	};
 	// Hatchback Sport
@@ -74,7 +74,7 @@ switch (_vehicle) do
 			case 4: {_color = "Tan"};
 			case 5: {_color = "Green"};
 			case 6: {_color = "Fire";};
-			case 7: {_color = "Police";};
+			case 7: {_color = "Police Blue";};
 		};
 	};
 	// SUV	
@@ -85,7 +85,7 @@ switch (_vehicle) do
 			case 0: {_color = "Dark Red";};
 			case 1: {_color = "Black";};
 			case 2: {_color = "Silver";};
-			case 3: {_color = "Police";};
+			case 3: {_color = "Police White";};
 			case 4: {_color = "Police Blue";};
 			case 5: {_color = "Medic"};
 			case 6: {_color = "Batman"};

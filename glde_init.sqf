@@ -3,26 +3,6 @@
 // Dedicated Scripts
 If (isDedicated) then {
 
-	// Market
-	if(isNil("life_market_prices")) then
-	{
-		[] call life_fnc_marketconfiguration;
-		diag_log "";
-		diag_log "Market prices generated!";
-		diag_log "";
-		
-		"life_market_prices" addPublicVariableEventHandler
-		{
-			diag_log "";
-			diag_log format["Market prices updated! %1", _this select 1];
-			diag_log "";
-		};
-		//Start server fsm
-		[] execFSM "core\fsm\server.fsm";
-		diag_log "";
-		diag_log "Server FSM executed";
-		diag_log "";
-	};
 
 
 };

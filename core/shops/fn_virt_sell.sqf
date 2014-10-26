@@ -37,13 +37,14 @@ if(([false,_type,_amount] call life_fnc_handleInv)) then
 	// Market begin
 	if(_marketprice != -1) then
 	{
-	[_type, _amount] spawn
-	{
-	sleep 120;
-	[_this select 0,_this select 1] call life_fnc_marketSell;
+		[_type, _amount] spawn
+		{
+			sleep 120;
+			[_this select 0,_this select 1] call life_fnc_marketSell;
+		};
 	};
 	// Market end
-
+	
 	[] call life_fnc_virt_update;
 	
 };

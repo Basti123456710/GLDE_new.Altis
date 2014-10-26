@@ -10,10 +10,10 @@ _gangMembers = [];
 
 sleep 0.5;
 if(visibleMap) then {
-	_gangMembers = playableUnits grpPlayer;
+	_gangMembers = units grpPlayer;
 	{
 		_marker = createMarkerLocal [format["%1_marker",_x],visiblePosition _x];
-		_marker setMarkerColorLocal "ColorGreen";
+		_marker setMarkerColorLocal "ColorYellow";
 		_marker setMarkerTypeLocal "Mil_dot";
 		_marker setMarkerTextLocal format["%1", name _x];
 
