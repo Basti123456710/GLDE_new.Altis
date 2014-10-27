@@ -3738,7 +3738,7 @@ class Mission
 					position[]={8291.4531,74.53083,25087.75};
 					id=229;
 					side="EAST";
-					vehicle="O_officer_F";
+					vehicle="B_medic_F";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -3750,7 +3750,7 @@ class Mission
 					position[]={8309.8701,76.803696,25071.74};
 					id=230;
 					side="EAST";
-					vehicle="O_officer_F";
+					vehicle="B_medic_F";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="adac_2";
@@ -3761,7 +3761,7 @@ class Mission
 					position[]={8297.2549,74.617935,25064.34};
 					id=231;
 					side="EAST";
-					vehicle="O_officer_F";
+					vehicle="B_medic_F";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="adac_3";
@@ -3772,7 +3772,7 @@ class Mission
 					position[]={8280.4082,69.7491,25062.461};
 					id=232;
 					side="EAST";
-					vehicle="O_officer_F";
+					vehicle="B_medic_F";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="adac_4";
@@ -3783,7 +3783,7 @@ class Mission
 					position[]={8261.7227,65.172478,25075.188};
 					id=233;
 					side="EAST";
-					vehicle="O_officer_F";
+					vehicle="B_medic_F";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="adac_5";
@@ -3794,7 +3794,7 @@ class Mission
 					position[]={8261.3252,66.729973,25095.074};
 					id=234;
 					side="EAST";
-					vehicle="O_officer_F";
+					vehicle="B_medic_F";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="adac_6";
@@ -3805,7 +3805,7 @@ class Mission
 					position[]={8279.6123,71.480217,25106.609};
 					id=235;
 					side="EAST";
-					vehicle="O_officer_F";
+					vehicle="B_medic_F";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="adac_7";
@@ -3816,7 +3816,7 @@ class Mission
 					position[]={8301.082,76.575951,25111.779};
 					id=236;
 					side="EAST";
-					vehicle="O_officer_F";
+					vehicle="B_medic_F";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="adac_8";
@@ -3827,7 +3827,7 @@ class Mission
 					position[]={8314.1143,79.575439,25098.494};
 					id=237;
 					side="EAST";
-					vehicle="O_officer_F";
+					vehicle="B_medic_F";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="adac_9";
@@ -3838,7 +3838,7 @@ class Mission
 					position[]={8315.168,80.090912,25081.389};
 					id=238;
 					side="EAST";
-					vehicle="O_officer_F";
+					vehicle="B_medic_F";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="adac_10";
