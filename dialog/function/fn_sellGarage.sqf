@@ -14,11 +14,11 @@ _vehicle = (call compile format["%1",_vehicle]) select 0;
 _vid = lbValue[2802,(lbCurSel 2802)];
 _pid = getPlayerUID player;
 _unit = player;
-if (life_sells_vehicle) { exitWith{}; }; // prevent duping
+if (life_action_inUse) { exitWith{}; }; // prevent duping
 
 
 if(isNil "_vehicle") exitWith {hint localize "STR_Garage_Selection_Error"};
-life_sells_vehicle = true;
+life_action_inUse = true;
 _price = [_vehicle,__GETC__(life_garage_sell)] call TON_fnc_index;
 if(_price == -1) then {_price = 1000;} else {_price = (__GETC__(life_garage_sell) select _price) select 1;};
 
@@ -26,6 +26,6 @@ if(_price == -1) then {_price = 1000;} else {_price = (__GETC__(life_garage_sell
 hint format[localize "STR_Garage_SoldCar",[_price] call life_fnc_numberText];
 life_atmcash = life_atmcash + _price;
 
-life_sells_vehicle = false;
+life_action_inUse = false;
 
 closeDialog 0;
