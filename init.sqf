@@ -41,7 +41,7 @@ if(isDedicated && isNil("life_market_prices")) then
 [] execVM "glde_init.sqf";
 
 // Igi Load for ADAC
-if (playerSide == east) then
+if (side player == east) then
 {
 	[] execVM "glde\scripts\igi_load\IgiLoadInit.sqf";
 };

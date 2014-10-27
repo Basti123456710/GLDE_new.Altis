@@ -3,7 +3,7 @@ waituntil {!isnil "bis_fnc_init"};
 //if (isServer) exitwith {};
 //waitUntil { !(isNull player) };
 waitUntil { time > 0 };
-
+if (side player != east) exitWith {};
 IL_EV_Count = 0;
 IL_Veh_Array = [];
 

@@ -24,11 +24,6 @@ switch (playerSide) do {
 		_packet pushBack life_is_arrested;
 	};
 	
-	case east:
-    {
-        [] call life_fnc_adacsaveGear;
-        _packet set[count _packet,adac_gear];
-    };
 };
 
 [_packet,"DB_fnc_updateRequest",false,false] spawn life_fnc_MP;

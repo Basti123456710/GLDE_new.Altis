@@ -17,6 +17,7 @@
 //	Ways from points 1 and 2 can not be used simultaneously!!!												//
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+if (side player != east) exitWith {};
 
 //if true then show debug globalChat (TODO add more hints)
 IL_DevMod = false;
