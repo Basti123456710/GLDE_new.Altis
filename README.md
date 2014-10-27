@@ -6,4 +6,3 @@ Scripts:
 - EMP
 - withdraw driver licence
 - FuelConsumption
-- Statusbar
