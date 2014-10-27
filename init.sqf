@@ -40,11 +40,11 @@ if(isDedicated && isNil("life_market_prices")) then
 // GLDE custom
 [] execVM "glde_init.sqf";
 
-// Igi Load for ADAC
+/* Igi Load for ADAC
 if (side player == east) then
 {
 	[] execVM "glde\scripts\igi_load\IgiLoadInit.sqf";
-};
+}; */
 
 // Speedtraps
 [] execVM "glde\scripts\speedtrap\speedtrap30.sqf";

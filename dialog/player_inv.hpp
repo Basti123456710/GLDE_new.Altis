@@ -311,8 +311,8 @@ class playerSettings {
 		};
 		
 		class ButtonMarket : Life_RscButtonMenu {
-            idc = -1;
-            text = "Markt";
+            idc = 2040;
+            text = "Market";
             onButtonClick = "[] call life_fnc_openMarketView;";
             
             x = 0.1 + (6.25 / 19.8) + (1 / 250 / (safezoneW / safezoneH));
