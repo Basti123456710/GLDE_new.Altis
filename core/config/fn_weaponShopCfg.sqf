@@ -206,7 +206,7 @@ switch(_shop) do
 		switch(true) do
 		{
 			case (playerSide != west): {"You are not a cop!"};
-			case (__GETC__(life_coplevel) < 4): {"You are not at a Captain rank!"};
+			case (__GETC__(life_coplevel) < 5): {"You are not at a Captain rank!"};
 			default
 			{
 				["Altis Captain Shop",
